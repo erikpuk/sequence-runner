@@ -1,0 +1,31 @@
+{
+  "name": "sequence-runner",
+  "version": "0.0.1",
+  "description": "Efficiently run sets of Jest tests that only make sense as a sequence",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "create-jest-runner": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "jest-cli": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.5"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jest.json"
+  }
+}
